@@ -17,7 +17,6 @@ def main():
     caesar_txt = caesar(plain, k)
 
     for line_start in range(0, len(caesar_txt), 50):
-        # this list has the all the elements of a line
         current_line = caesar_txt[line_start : line_start + 50]
         for block_start in range(0, len(current_line), 5):
             block = caesar_txt[line_start + block_start : line_start + block_start + 5]
